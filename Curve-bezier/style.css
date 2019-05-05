@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    background-color: #ffeb3b;
+}
+
+.curve-bezier {
+    flex-basis: 50%;
+    border-radius: 40px;
+    height: 90%;
+    position: relative;
+    left: 40px;
+    overflow: hidden;
+    box-shadow: -19px 26px 125px #000;
+    background-color: rgba(0,0,0);
+}
+
+.info {
+    display: flex;
+    height: 100%;
+    flex-basis: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form-group {
+    display: flex;
+    padding: 40px 40px 20px 50px;
+    border-radius: 40px;
+    box-shadow: 19px 42px 108px #000;
+    background-color: transparent;
+    background-color: #f9484a;
+    background-image: linear-gradient(315deg, #f9484a 0%, #fbd72b 74%);
+}
+
+.input-bunch:first-child {
+    position: relative;
+}
+
+.input-bunch:first-child::before {
+    content: 'X';
+    display: inline-block;
+    position: absolute;
+    font-size: 50px;
+    color: #fff;
+    top: 20%;
+    left: -30px;
+}
+
+.input-bunch:first-child::after {
+    content: 'Y';
+    display: inline-block;
+    position: absolute;
+    font-size: 50px;
+    color: #fff;
+    top: 63%;
+    left: -30px;
+}
+
+.input-bunch > h2 {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.input-bunch > input {
+    width: 100px;
+    height: 100px;
+    font-size: 40px;
+    text-align: center;
+    color: #fff;
+    outline: none;
+    margin: 0 20px 20px 20px;
+    border: 3px solid #fff;
+    border-radius: 15px;
+    background-color: transparent;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.current {
+    width: 75%;
+}
+
+.current > h2 {
+    color: #fff;
+    text-align: center;
+    font-weight: 200;
+    padding-bottom: 30px;
+    font-size: 30px;
+}
+
+.current-info {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 30px 0 30px 0;
+    text-align: center;
+    background-color: #f9484a;
+    background-image: linear-gradient(315deg, #f9484a 0%, #fbd72b 74%);
+    box-shadow: 19px -1px 108px #000;
+    border-radius: 40px;
+}
+
+.current-info table {
+    border-spacing: 20px 0;
+}
+
+.current-info table thead {
+    font-size: 20px;
+    color: #fff;
+}
+
+.current-info table thead tr th {
+    font-weight: 400;
+}
+
+.current-info table tbody tr td span {
+    font-size: 30px;
+    color: #fff;
+    font-weight: 300;
+}

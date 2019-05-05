@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Кривая Безье по трем точкам</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:100,200,300,400,500,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="curve-bezier">
+			<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+				<line x1="154" y1="389" x2="83" y2="33" stroke="#ffeb3b" stroke-dasharray="15" stroke-width="0.5" />
+				<line x1="83" y1="33" x2="645" y2="540" stroke="#ffeb3b" stroke-dasharray="15" stroke-width="0.5" />
+		
+				<path d="M154 389 Q 83 33 645 540" stroke="#fff" fill="transparent"  stroke-width="5"/>
+				
+				<circle style="cursor: move" cx="154" cy="389" r="10" stroke="#ffeb3b" fill="#000" stroke-width="5"/>
+				<circle style="cursor: move" cx="83" cy="33" r="10" stroke="#ffeb3b" fill="#000" stroke-width="5"/>
+				<circle style="cursor: move" cx="645" cy="540" r="10" stroke="#ffeb3b" fill="#000" stroke-width="5"/>
+			</svg>
+		</div>
+
+		<div class="info">
+			<div class="form-group">
+				<div class="input-bunch">
+					<h2>1-я точка</h2>
+					<input class="x1 input-group" type="number" value="154"><br>
+					<input class="y1 input-group" type="number" value="389"><br>
+				</div>
+				<div class="input-bunch">
+					<h2>2-я точка</h2>
+					<input class="x2 input-group" type="number" value="83"><br>
+					<input class="y2 input-group" type="number" value="33"><br>
+				</div>
+				<div class="input-bunch">
+					<h2>3-я точка</h2>
+					<input class="x3 input-group" type="number" value="645"><br>
+					<input class="y3 input-group" type="number" value="540">
+				</div>
+			</div>
+
+			<div class="current">
+				<h2>Текущие координаты точек</h2>
+				<div class="current-info">
+					<table>
+						<thead>
+							<tr>
+								<th>X<sub>1</sub></th>
+								<th>Y<sub>1</sub></th>
+								<th>X<sub>2</sub></th>
+								<th>Y<sub>2</sub></th>
+								<th>X<sub>3</sub></th>
+								<th>Y<sub>3</sub></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><span>154</span></td>
+								<td><span>389</span></td>
+								<td><span>83</span></td>
+								<td><span>33</span></td>
+								<td><span>645</span></td>
+								<td><span>540</span></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="cubic.js"></script>
+</body>
+</html>
