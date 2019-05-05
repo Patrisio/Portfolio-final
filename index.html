@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200i,300,400,500,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="menu">
+        <ul class="menu__list">
+            <li class="menu__list-item"><a class="menu__list-link" href="#section-header">Обо мне</a></li>
+            <li class="menu__list-item"><a class="menu__list-link" href="#portfolio">Портфолио</a></li>
+            <li class="menu__list-item"><a class="menu__list-link" href="#skills">Навыки</a></li>
+            <li class="menu__list-item"><a class="menu__list-link" id="contact-phone" href="#footer">Контакты</a></li>
+        </ul>
+    </div>
+
+    <header class="header">
+        <div class="sidebar">
+            <div class="logo">
+                <img src="img/logo-white.png" alt="Logo">
+            </div>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__list-item"><a class="nav__list-link" href="#section-header">Обо мне</a></li>
+                    <li class="nav__list-item"><a class="nav__list-link" href="#portfolio">Портфолио</a></li>
+                    <li class="nav__list-item"><a class="nav__list-link" href="#skills">Навыки</a></li>
+                    <li class="nav__list-item"><a class="nav__list-link" href="#footer">Контакты</a></li>
+                </ul>
+                <div class="nav__icon">
+                    <span></span>
+                </div>
+            </nav>
+
+            <a href="#section-header" class="arrow-down"><i class="fas fa-chevron-down"></i></a>
+        </div>
+
+        <div class="content">
+            <div class="about">
+                <div class="about__info">
+                    <h1 class="about__title">Frontend-разработчик</h1>
+                    <p class="about__subtitle">Ответственный, настойчивый, целеустремленный, легко
+                        обучаемый, комуникабельный, трудоголик с желанием развиваться и огромным
+                        желанием работать.</p>
+                    <a href="tel:+79777210374" class="about__btn">Нанять</a>
+                </div>
+                <div class="about__img"><img src="img/Плотников.JPG" alt="Me"></div>
+            </div>
+            <div class="socials">
+                <div class="socials__cv">
+                    <a href="Плотников-Александр-Игоревич.docx" download class="socials__icon">cv</a>
+                    <div class="socials__text"></div>
+                </div>
+                <div class="socials__vk">
+                    <a target="_blank" href="https://vk.com/id214271095" class="socials__icon"><i class="fab fa-vk"></i></a>
+                    <div class="socials__text"></div>
+                </div>
+                <div class="socials__github">
+                    <a target="_blank" href="https://github.com/Patrisio" class="socials__icon"><i class="fab fa-github"></i></a>
+                    <div class="socials__text"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section-header" id="section-header">
+        <div class="title-secondary" data-aos="flip-down">
+            <h1 class="title-secondary__main">Обо мне</h1>
+            <p class="title-secondary__auxiliary">Познакомимся ближе</p>
+        </div>
+
+        <div class="personal">
+            <div class="personal__about" data-aos="fade-right">
+                <h2 class="personal__title">Немного о себе</h2>
+                <p class="personal__paragraph1">Увлеченный и целеустремленный разработчик без опыта. В свободное время читаю статьи, посвященные веб-разработке.</p>
+                <p class="personal__paragraph2">Постоянно улучшаю свои навыки во всех областях, начиная разработкой и заканчивая повседневными вещами. Cчитаю, что залог продуктивного дня - это начать его с раннего утра.</p>
+            </div>
+
+            <div class="personal__photo" data-aos="zoom-in">
+                <h2 class="personal__title">Фото</h2>
+                <img src="img/Плотников.JPG" alt="My photo">
+            </div>
+
+            <div class="personal__info" data-aos="fade-left">
+                <h2 class="personal__title">Персональная информация</h2>
+                <p class="personal__name">Александр Плотников</p>
+                <ul class="contact-list">
+                    <li class="contact-item">День рождения: 18 марта 1999 года (20 лет)</li>
+                    <li class="contact-item">Номер телефона: <a href="tel:+79777210374"> +7 977 721 0374</a></li>
+                    <li class="contact-item">E-mail: <a href="mailto:studentfrontend@mail.ru">studentfrontend@mail.ru</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <div class="title-secondary" data-aos="flip-down">
+            <h1 class="title-secondary__main">Мои навыки</h1>
+            <p class="title-secondary__auxiliary">Hard skills</p>
+        </div>
+
+        <div class="skills__wrapper">
+            <div class="skills__html skills__box">
+                <h2>Html</h2>
+                <p class="skills__desc">
+                    Изучил семантические теги и умею их применять на практике. При верстке использую методологию BEM для именования классов.
+                </p>
+            </div>
+            <div class="skills__css skills__box">
+                <h2>Css</h2>
+                <p class="skills__desc">
+                    Изучил CSS, умею работать с анимацией на базовом уровне. Научилс работать с медиа-запросами, flexbox и grid, а также делать адаптив для сайта при помощи них. Изучил препроцессор SaSS и использую на практике SCSS синтаксис
+                </p>
+            </div>
+            <div class="skills__js skills__box">
+                <h2>Javascript</h2>
+                <p class="skills__desc">
+                    Изучил основы JavaScript. Знаю, как взаимодействуют стек вызовов Web APIS, очередь задач и обработчик событий. Понимаю, как обрабатываются коллбэки. Изучил работу промисов и fetch API. Знаю ES6. На базовом уровне изучил классы и прототипы, а также замыкания и особенности использования this.
+                </p>
+            </div>
+            <div class="skills__react skills__box">
+                <h2>React</h2>
+                <p class="skills__desc">
+                    Знаю, что такое React-компоненты, элементы и JSX. Понимаю для чего применяются коллекции и ключи. Способен ставить обработчики событий и работать с формами.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="title-secondary black" data-aos="flip-down">
+            <h1 class="title-secondary__main">Портфолио</h1>
+            <p class="title-secondary__auxiliary">Мои последние работы</p>
+        </div>
+        <div class="portfolio__area">
+            <div class="portfolio__area-item" data-aos="zoom-in"><img src="img/Natours.png" alt="Natours">
+                <div class="portfolio__hidden">
+                    <div class="portfolio__hidden-text">
+                        <h4 class="portfolio__hidden--title">Natours</h4>
+                        <a class="portfolio__hidden--watch natours" target="_blank" href="#">Посмотреть</a>
+                    </div>
+                </div>
+                <div class="portfolio__desc">
+                    <div class="portfolio--github"><a target="_blank" href="https://github.com/Patrisio/Natours"><i class="fab fa-github"></i></a></div>
+                    <div class="portfolio--website"><a target="_blank" href="../Natours/index.html"><i class="fas fa-globe-americas"></i></a></div>
+                </div>
+            </div>
+            <div class="portfolio__area-item" data-aos="zoom-in"><img src="img/Trillo.png" alt="Trillo">
+                <div class="portfolio__hidden">
+                    <div class="portfolio__hidden-text">
+                        <h4 class="portfolio__hidden--title">Trillo</h4>
+                        <a class="portfolio__hidden--watch trillo" target="_blank" href="#">Посмотреть</a>
+                    </div>
+                </div>
+                <div class="portfolio__desc">
+                    <div class="portfolio--github"><a target="_blank" href="https://github.com/Patrisio/Trillo"><i class="fab fa-github"></i></a></div>
+                    <div class="portfolio--website"><a target="_blank" href="../Trillo/index.html"><i class="fas fa-globe-americas"></i></a></div>
+                </div>
+            </div>
+            <div class="portfolio__area-item" data-aos="zoom-in"><img src="img/Nexter.png" alt="Nexter">
+                <div class="portfolio__hidden">
+                    <div class="portfolio__hidden-text">
+                        <h4 class="portfolio__hidden--title">Nexter</h4>
+                        <a class="portfolio__hidden--watch nexter" target="_blank" href="#">Посмотреть</a>
+                    </div>
+                </div>
+                <div class="portfolio__desc">
+                    <div class="portfolio--github"><a target="_blank" href="https://github.com/Patrisio/Nexter"><i class="fab fa-github"></i></a></div>
+                    <div class="portfolio--website"><a target="_blank" href="../Nexter/index.html"><i class="fas fa-globe-americas"></i></a></div>
+                </div>
+            </div>
+            <div class="portfolio__area-item" data-aos="zoom-in"><img src="img/PigGame.png" alt="PigGame">
+                <div class="portfolio__hidden">
+                    <div class="portfolio__hidden-text">
+                        <h4 class="portfolio__hidden--title">DiceGame</h4>
+                        <a class="portfolio__hidden--watch pigGame" target="_blank" href="#">Посмотреть</a>
+                    </div>
+                </div>
+                <div class="portfolio__desc">
+                    <div class="portfolio--github"><a target="_blank" href="https://github.com/Patrisio/Dice-Game"><i class="fab fa-github"></i></a></div>
+                    <div class="portfolio--website"><a target="_blank" href="../PigGame/index.html"><i class="fas fa-globe-americas"></i></a></div>
+                </div>
+            </div>
+            <div class="portfolio__area-item" data-aos="zoom-in"><img src="img/Budgety.png" alt="Budgety">
+                <div class="portfolio__hidden">
+                    <div class="portfolio__hidden-text">
+                        <h4 class="portfolio__hidden--title">Budgety</h4>
+                        <a class="portfolio__hidden--watch budgety" target="_blank" href="#">Посмотреть</a>
+                    </div>
+                </div>
+                <div class="portfolio__desc">
+                    <div class="portfolio--github"><a target="_blank" href="https://github.com/Patrisio/budgety"><i class="fab fa-github"></i></a></div>
+                    <div class="portfolio--website"><a target="_blank" href="../Budgety/index.html"><i class="fas fa-globe-americas"></i></a></div>
+                </div>
+            </div>
+            <div class="portfolio__area-item" data-aos="zoom-in"><img src="img/Saloon.png" alt="Saloon">
+                <div class="portfolio__hidden">
+                    <div class="portfolio__hidden-text">
+                        <h4 class="portfolio__hidden--title">Салон красоты</h4>
+                        <a class="portfolio__hidden--watch saloon" target="_blank" href="#">Посмотреть</a>
+                    </div>
+                </div>
+                <div class="portfolio__desc">
+                    <div class="portfolio--github"><a target="_blank" href="https://github.com/Patrisio/Beauty-Salon"><i class="fab fa-github"></i></a></div>
+                    <div class="portfolio--website"><a target="_blank" href="../Beauty-saloon/index.html"><i class="fas fa-globe-americas"></i></a></div>
+                </div>
+            </div>
+            <div class="portfolio__area-item" data-aos="zoom-in"><img src="img/iShop.png" alt="iShop">
+                <div class="portfolio__hidden">
+                    <div class="portfolio__hidden-text">
+                        <h4 class="portfolio__hidden--title">iShop</h4>
+                        <a class="portfolio__hidden--watch iShop" target="_blank" href="#">Посмотреть</a>
+                    </div>
+                </div>
+                <div class="portfolio__desc">
+                    <div class="portfolio--github"><a target="_blank" href="https://github.com/Patrisio/iShop"><i class="fab fa-github"></i></a></div>
+                    <div class="portfolio--website"><a target="_blank" href="../iShop/products.html"><i class="fas fa-globe-americas"></i></a></div>
+                </div>
+            </div>
+            <div class="portfolio__area-item" data-aos="zoom-in"><img src="img/YouTube.png" alt="YouTube-fake">
+                <div class="portfolio__hidden">
+                    <div class="portfolio__hidden-text">
+                        <h4 class="portfolio__hidden--title">YouTube-fake</h4>
+                        <a class="portfolio__hidden--watch youTube-fake" target="_blank" href="#">Посмотреть</a>
+                    </div>
+                </div>
+                <div class="portfolio__desc">
+                    <div class="portfolio--github"><a target="_blank" href="https://github.com/Patrisio/YouTube-fake"><i class="fab fa-github"></i></a></div>
+                    <div class="portfolio--website"><a target="_blank" href="../YouTube-fake/index.html"><i class="fas fa-globe-americas"></i></a></div>
+                </div>
+            </div>
+            <div class="portfolio__area-item" data-aos="zoom-in"><img src="Curve-bezier/Curve.png" alt="YouTube-fake">
+                <div class="portfolio__hidden">
+                    <div class="portfolio__hidden-text">
+                        <h4 class="portfolio__hidden--title">Кривая Безье по трём точкам</h4>
+                        <a class="portfolio__hidden--watch curve-bezier" target="_blank" href="#">Посмотреть</a>
+                    </div>
+                </div>
+                <div class="portfolio__desc">
+                    <div class="portfolio--github"><a target="_blank" href="https://github.com/Patrisio/-----"><i class="fab fa-github"></i></a></div>
+                    <div class="portfolio--website"><a target="_blank" href="../Curve-bezier/index.html"><i class="fas fa-globe-americas"></i></a></div>
+                </div>
+            </div>
+            <div class="portfolio__area-item" data-aos="zoom-in"><img src="canvas/canvas.png" alt="YouTube-fake">
+                <div class="portfolio__hidden">
+                    <div class="portfolio__hidden-text">
+                        <h4 class="portfolio__hidden--title">Канвас</h4>
+                        <a class="portfolio__hidden--watch canvas" target="_blank" href="#">Посмотреть</a>
+                    </div>
+                </div>
+                <div class="portfolio__desc">
+                    <div class="portfolio--github"><a target="_blank" href="https://github.com/Patrisio/Canvas"><i class="fab fa-github"></i></a></div>
+                    <div class="portfolio--website"><a target="_blank" href="../canvas/index.html"><i class="fas fa-globe-americas"></i></a></div>
+                </div>
+            </div>
+            <div class="portfolio__area-item" data-aos="zoom-in"><img src="weather/weather.png" alt="YouTube-fake">
+                <div class="portfolio__hidden">
+                    <div class="portfolio__hidden-text">
+                        <h4 class="portfolio__hidden--title">Погода</h4>
+                        <a class="portfolio__hidden--watch weather" target="_blank" href="#">Посмотреть</a>
+                    </div>
+                </div>
+                <div class="portfolio__desc">
+                    <div class="portfolio--github"><a target="_blank" href="https://github.com/Patrisio/Weather"><i class="fab fa-github"></i></a></div>
+                    <div class="portfolio--website"><a target="_blank" href="../weather/index.html"><i class="fas fa-globe-americas"></i></a></div>
+                </div>
+            </div>
+            <div class="portfolio__area-item" data-aos="zoom-in"><img src="Beatmaker/beatmaker.png" alt="YouTube-fake">
+                <div class="portfolio__hidden">
+                    <div class="portfolio__hidden-text">
+                        <h4 class="portfolio__hidden--title">Музыкальное приложение</h4>
+                        <a class="portfolio__hidden--watch beatmaker" target="_blank" href="#">Посмотреть</a>
+                    </div>
+                </div>
+                <div class="portfolio__desc">
+                    <div class="portfolio--github"><a target="_blank" href="https://github.com/Patrisio/Music-app"><i class="fab fa-github"></i></a></div>
+                    <div class="portfolio--website"><a target="_blank" href="../Beatmaker/index.html"><i class="fas fa-globe-americas"></i></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio__end">
+            <p><span class="portfolio__end--weight">Хотите узнать больше?</span><br><br>
+            Переходите на <span class="portfolio__end--underline"><a target="_blank" href="https://github.com/Patrisio">github</a></span> и не забудьте пригласить на собеседование</p>
+        </div>
+    </section>
+
+    <footer class="footer" id="footer">
+        <div class="wrap">
+            <div class="address">
+                <p class="contact__item">АДРЕС:</p>
+                <p class="contact__item contact__desc contact__geo">г. Москва, ул. Беговая, 17, к. 1</p>
+            </div>
+
+            <div class="phone">
+                <p class="contact__item">ТЕЛЕФОН:</p>
+                <p class="contact__item contact__desc contact__smartphone">+7 977 721 0374</p>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/common.js"></script>
+</body>
+</html>
