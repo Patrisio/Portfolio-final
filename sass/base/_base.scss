@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Gotham_Pro', Arial, sans-serif;
+    src: url('Gotham_Pro.ttf') format('ttf');
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+    @include respond(tab-land) { // width < 1200?
+        font-size: 56.25%; //1 rem = 9px, 9/16 = 50%
+    }
+
+    @include respond(tab-port) { // width < 900?
+        font-size: 50%; //1 rem = 8px, 8/16 = 50%
+    }
+    
+    @include respond(big-desktop) {
+        font-size: 75%; //1rem = 12, 12/16
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+.container {
+    position: relative;
+    z-index: 4;
+    @include respond(phone) {
+    }
+}

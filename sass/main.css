@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Gotham_Pro', Arial, sans-serif;
+  src: url("Gotham_Pro.ttf") format("ttf");
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Gotham_Pro', Arial, sans-serif;
+}
+/*# sourceMappingURL=main.css.map */

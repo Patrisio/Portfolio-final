@@ -1,0 +1,85 @@
+.skills {
+    background-color: #ccc;
+    background-size: cover;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(#5C0DAC, 0.8) 70%,
+        rgba(#fafafa, 0.8)),
+    url('../../img/skills-bg.jpg');
+    background-attachment: fixed;
+    padding: 20rem 0 10rem 0;
+    position: relative;
+    overflow: auto;
+    color: #fff;
+    margin-top: -15rem;
+    z-index: -19;
+    overflow: hidden;
+    @include respond(phone) {
+        margin-top: 0;
+        padding: 8rem 0 5rem 0;
+    }
+
+    &__wrapper {
+        max-width: 100rem;
+        margin: 10rem auto 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+        row-gap: 5rem;
+    }
+
+    & > &__wrapper > div > h2 {
+        font-size: 2.5rem;
+    }
+
+    &__html {
+        max-width: 32rem;
+        margin: 0 auto;
+        padding: 2rem;
+        border-radius: 20px;
+        box-shadow: 0 10px 50px rgba(188,197,216,1);
+    }
+
+    &__html > h2 {
+        margin: 0;
+    }
+
+    &__css {
+        max-width: 32rem;
+        margin: 0 auto;
+        padding: 2rem;
+        border-radius: 20px;
+        box-shadow: 0 10px 50px rgba(188,197,216,1);
+    }
+
+    &__js {
+        max-width: 32rem;
+        margin: 0 auto;
+        padding: 2rem;
+        border-radius: 20px;
+        box-shadow: 0 10px 50px rgba(188,197,216,1);
+    }
+
+    &__react {
+        max-width: 32rem;
+        margin: 0 auto;
+        padding: 2rem;
+        border-radius: 20px;
+        box-shadow: 0 10px 50px rgba(188,197,216,1);
+    }
+
+    &__desc {
+        font-size: 2rem;
+    }
+
+    &__box {
+        max-width: 40rem;
+        box-shadow: 0 -2px 107px rgba(188,197,216,1);
+    }
+
+    &__box > h2 {
+        margin: 0;
+        text-transform: uppercase;
+    }
+}

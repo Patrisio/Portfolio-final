@@ -1,0 +1,36 @@
+.menu {
+    position: fixed;
+    z-index: 999;
+    top: 10.7rem;
+    width: 77%;
+    height: calc(100vh - 10.7rem);
+    background-color: rgba(130,125,253,1);
+    background: linear-gradient(to left bottom, #5C0DAC, 30%,rgba(130,125,253,1) 100%);
+    transition: all .5s;
+    transform: translateX(-100%);
+    &__list {
+        position: relative;
+        list-style: none;
+        text-align: center;
+        padding-left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0;
+    }
+
+    &__list-item {
+        font-size: 2rem;
+        color: #fff;
+        margin-bottom: 5rem;
+    }
+
+    &__list-link {
+        text-decoration: none;
+        color: #fff;
+        font-size: 3rem;
+    }
+
+    &--active {
+        transform: translateX(0%);
+    }
+}

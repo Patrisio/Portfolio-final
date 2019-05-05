@@ -1,0 +1,173 @@
+.section-header {
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(#5648f7, 0.8),
+        rgba(#5648f7, 0.8)),
+    url('../../img/bg\ \(2\).jpg');
+    padding-top: 7rem;
+    clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+    padding-bottom: 10rem;
+    @include respond(phone) {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        padding-bottom: 2rem;
+    }
+}
+
+.title-secondary {
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    max-width: 50rem;
+    margin: 0 auto;
+    color: #fff;
+
+    &::after {
+        content: '';
+        display: block;
+        background-color: currentColor;
+        position: absolute;
+        top: 8rem;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 1px;
+        width: 15rem;
+    }
+    &__main {
+        margin: 0;
+    }
+    &__auxiliary {
+        letter-spacing: 3px; 
+    }
+}
+
+.personal {
+    display: flex;
+    justify-content: space-between;
+    max-width: 110rem;
+    margin: 0 auto;
+    margin-top: 10rem;
+    text-align: center;
+    color: #fff;
+    @include respond(tab-port) {
+        padding: 0 3rem 0 3rem;
+    }
+    @include respond(phone) {
+        flex-direction: column;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__about {
+        font-size: 1.5rem;
+        text-align: left;
+        @include respond(tab-port) {
+            flex-basis: 25rem;
+        }
+        @include respond(phone) {
+            margin-top: 3rem;
+            font-size: 2rem;
+            width: 150%;
+            position: relative;
+            right: 5rem;
+        }
+    }
+
+    &__title  {
+        font-size: 2rem;
+        @include respond(phone) {
+            text-align: center;
+        }
+    }
+
+    &__paragraph1 {
+        font-style: italic;
+        @include respond(phone) {
+            margin-top: 3rem;
+            font-size: 2rem;
+            width: 150%;
+            position: relative;
+            right: 5rem;
+        }
+    }
+
+    &__paragraph2 {
+        @include respond(phone) {
+            margin-top: 3rem;
+            font-size: 2rem;
+            width: 150%;
+            position: relative;
+            right: 5rem;
+        }
+    }
+
+    &__photo {
+        
+        & > img {
+            position: relative;
+            right: 1rem;
+            max-width: 25rem;
+            max-height: 30rem;
+            border-radius: 20px;
+            position: relative;
+            @include respond(phone) {
+                right: 4rem;
+            }
+        }
+        @include respond(phone) {
+            order: -1;
+        }
+    }
+
+    &__info {
+        @include respond(tab-port) {
+            flex-basis: 31rem;
+        }
+        @include respond(phone) {
+            width: 150%;
+            position: relative;
+            right: 5rem;
+        }
+    }
+
+    &__name {
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: left;
+    }
+}
+
+.contact {
+    &-list {
+        list-style: none;
+        text-align: left;
+        font-size: 1.5rem;
+        padding-left: 0;
+        @include respond(phone) {
+            margin-top: 3rem;
+            font-size: 2rem;
+            width: 150%;
+            position: relative;
+            right: 5rem;
+        }
+    }
+
+    &-item {
+        margin-bottom: 2rem;
+
+        & > a[href] {
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 1px dashed #fff;
+            transition: all .3s;
+            &:hover {
+                color: #ccc;
+            }
+        }
+    }
+}
+
+div[class^="personal__"] {
+    max-width: 35rem;
+}
